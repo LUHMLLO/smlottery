@@ -161,3 +161,9 @@ cypress/videos
 # sonarqube
 
 .scannerwork
+
+
+
+# project folders
+
+/template
