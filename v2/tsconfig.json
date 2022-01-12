@@ -1,17 +1,22 @@
 {
     "compilerOptions": {
+        "baseUrl": ".",
         "target": "esnext",
         "module": "esnext",
         "moduleResolution": "node",
         "strict": true,
-        "isolatedModules": true,
-        "useDefineForClassFields": true,
         "jsx": "preserve",
         "sourceMap": true,
         "resolveJsonModule": true,
         "esModuleInterop": true,
+        "removeComments": true,
+        "importHelpers": true,
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true,
+        "isolatedModules": true,
+        "useDefineForClassFields": true,
         "lib": ["esnext", "dom"],
-        "types": ["node"],
+        "types": ["vite/client", "vite-plugin-pages/client"],
         "paths": {
             "~/*": ["./src/assets/*"],
             "@/*": ["./src/*"]

@@ -1,6 +1,8 @@
+import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import Components from 'unplugin-vue-components/vite'
+import Pages from 'vite-plugin-pages'
 
 export default defineConfig({
     base: '/',
@@ -20,7 +22,7 @@ export default defineConfig({
         cssCodeSplit: true,
     },
     optimizeDeps: {
-        include: ['vue', 'vue-router', 'pinia'],
+        include: ['vue', 'pinia'],
     },
     plugins: [
         vue({
@@ -30,6 +32,7 @@ export default defineConfig({
                 },
             },
         }),
+        Pages({ dirs: [{ dir: resolve(__dirname, './src/pages'), baseRoute: '' }] }),
         Components({
             dirs: ['src/components'],
             extensions: ['vue'],

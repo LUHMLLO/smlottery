@@ -8,6 +8,7 @@
     "update": "npm install -g npm-check-updates && ncu -u && npm install"
   },
   "dependencies": {
+    "@vueuse/head": "^0.7.4",
     "axios": "^0.24.0",
     "mindesignsystem": "^1.1.5-3",
     "pinia": "^2.0.9",
@@ -20,6 +21,7 @@
     "typescript": "^4.5.4",
     "unplugin-vue-components": "^0.17.11",
     "vite": "^2.7.10",
+    "vite-plugin-pages": "^0.19.9",
     "vite-plugin-pwa": "^0.11.12",
     "vue-tsc": "^0.30.2"
   }
