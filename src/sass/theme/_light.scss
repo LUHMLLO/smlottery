@@ -1,0 +1,20 @@
+@mixin scheme_light() {
+    --primary: #f2f2f2 /*offwhite-600*/;
+    --secondary: #e8e8e8 /*white-600*/;
+    --ternary: #d1d1d1 /*white-700*/;
+    --accent: #eab308 /*yellow-500*/;
+  
+    --page-background: #fbfbfb; /* offwhite-500*/
+  
+    --input-border: #2c2f35 /*cool-grey-800*/;
+    --input-outline: #f43f5e /*rose-500*/;
+    --input-background: #17191c /*cool-grey-900*/;
+  
+    --headings: #17191c /*white-500*/;
+    --sub-headings: #17191c /*white-500*/;
+    --content: #17191c /*white-500*/;
+    --links: #17191c /*white-500*/;
+    --icons: #17191c /*white-500*/;
+    --buttons: #17191c /*white-500*/;
+  }
+  
