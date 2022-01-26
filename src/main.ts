@@ -1,5 +1,4 @@
-import "../../mindesignsystem/src/sass-framework/sass/core/main.scss";
-import "../../mindesignsystem/src/sass-framework/sass/classes/main.scss";
+import "mindesignsystem";
 
 import { createApp } from "vue";
 import { createPinia } from "pinia";

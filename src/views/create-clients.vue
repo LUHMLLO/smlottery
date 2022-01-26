@@ -15,7 +15,7 @@ const tabs = reactive({
   preguntasDeSeguridad: false,
 });
 
-const toggleOne = (toggle: string) => {
+function toggleOne(toggle: string): void {
   Object.entries(tabs).forEach(([key, value]) => {
     if (toggle == key) {
       tabs[key] = true;
@@ -23,7 +23,7 @@ const toggleOne = (toggle: string) => {
       tabs[key] = false;
     }
   });
-};
+}
 </script>
 
 <template>

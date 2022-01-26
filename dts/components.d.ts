@@ -5,7 +5,6 @@
 declare module 'vue' {
   export interface GlobalComponents {
     AppHeader: typeof import('./../src/components/App/App-Header.vue')['default']
-    AppLayout: typeof import('./../src/components/Layouts/AppLayout.vue')['default']
     AppSidebar: typeof import('./../src/components/App/App-Sidebar.vue')['default']
     ChartBar: typeof import('./../src/components/Charts/Chart-Bar.vue')['default']
     ChartLine: typeof import('./../src/components/Charts/Chart-Line.vue')['default']

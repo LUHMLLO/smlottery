@@ -24,7 +24,7 @@ export default defineConfig({
     minify: false,
   },
   optimizeDeps: {
-    include: ["vue", "vue-router", "pinia", "@vueuse/core", "@vueuse/head", "sass", "axios"],
+    include: ["vue", "vue-router", "pinia", "@vueuse/core", "@vueuse/head", "sass", "axios", "mindesignsystem"],
   },
   plugins: [
     vue({
