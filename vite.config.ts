@@ -20,9 +20,11 @@ export default defineConfig({
   },
   build: {
     cssCodeSplit: true,
+    chunkSizeWarningLimit: 2000,
+    minify: false,
   },
   optimizeDeps: {
-    include: ["vue", "vue-router", "pinia", "sass", "mindesignsystem"],
+    include: ["vue", "vue-router", "pinia", "@vueuse/core", "@vueuse/head", "sass", "axios"],
   },
   plugins: [
     vue({
@@ -33,24 +35,20 @@ export default defineConfig({
       },
     }),
     AutoImport({
-      imports: ["vue", "@vueuse/head", "vue-router"],
-      dts: "auto-imports.d.ts",
+      imports: ["vue", "@vueuse/core", "@vueuse/head", "vue-router"],
+      dts: "dts/auto-imports.d.ts",
     }),
     Pages({
-      dirs: "src/views",
+      dirs: [{ dir: "src/views", baseRoute: "" }],
     }),
     Components({
       dirs: ["src/components"],
-      extensions: ["vue"],
+      extensions: ["vue", "md"],
       deep: true,
-      dts: true,
-      directoryAsNamespace: true,
+      dts: "dts/components.d.ts",
+      directoryAsNamespace: false,
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
-      exclude: [
-        /[\\/]node_modules[\\/]/,
-        /[\\/]\.git[\\/]/,
-        /[\\/]\.nuxt[\\/]/,
-      ],
+      exclude: [/[\\/]node_modules[\\/]/, /[\\/]\.git[\\/]/, /[\\/]\.nuxt[\\/]/],
     }),
   ],
 });
