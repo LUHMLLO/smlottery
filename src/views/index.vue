@@ -19,7 +19,7 @@ const randomInt = (max: number, min: number): number => {
       <min-column class="gap-8" v-for="stats in weeklyStats" :key="stats">
         <label class="label">{{ stats }}</label>
         <min-column>
-          <ChartBar class="w-100" />
+          <ChartsBar class="w-100" />
         </min-column>
       </min-column>
     </min-grid>

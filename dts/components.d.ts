@@ -4,15 +4,15 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
-    AppHeader: typeof import('./../src/components/App/App-Header.vue')['default']
-    AppSidebar: typeof import('./../src/components/App/App-Sidebar.vue')['default']
-    ChartBar: typeof import('./../src/components/Charts/Chart-Bar.vue')['default']
-    ChartLine: typeof import('./../src/components/Charts/Chart-Line.vue')['default']
-    ConfigurarTickets: typeof import('./../src/components/Forms/ConfigurarTickets.vue')['default']
-    CrearClientes: typeof import('./../src/components/Forms/CrearClientes.vue')['default']
-    PlanesYLicencias: typeof import('./../src/components/Forms/PlanesYLicencias.vue')['default']
-    PreguntasDeSeguridad: typeof import('./../src/components/Forms/PreguntasDeSeguridad.vue')['default']
-    SorteosAutomaticos: typeof import('./../src/components/Forms/SorteosAutomaticos.vue')['default']
+    AppHeader: typeof import('./../src/components/App/Header.vue')['default']
+    AppSidebar: typeof import('./../src/components/App/Sidebar.vue')['default']
+    ChartsBar: typeof import('./../src/components/Charts/Bar.vue')['default']
+    ChartsLine: typeof import('./../src/components/Charts/Line.vue')['default']
+    SuperadminCompaniesCreateClientsFormsDetails: typeof import('./../src/components/superadmin/companies/create-clients/forms/details.vue')['default']
+    SuperadminCompaniesCreateClientsFormsLicenses: typeof import('./../src/components/superadmin/companies/create-clients/forms/licenses.vue')['default']
+    SuperadminCompaniesCreateClientsFormsRaffles: typeof import('./../src/components/superadmin/companies/create-clients/forms/raffles.vue')['default']
+    SuperadminCompaniesCreateClientsFormsSecurity: typeof import('./../src/components/superadmin/companies/create-clients/forms/security.vue')['default']
+    SuperadminCompaniesCreateClientsFormsTickets: typeof import('./../src/components/superadmin/companies/create-clients/forms/tickets.vue')['default']
   }
 }
 

@@ -1,0 +1,31 @@
+@use "base";
+@use "dark";
+@use "light";
+
+@media (prefers-color-scheme: light) {
+  :root {
+    @include light.scheme_light();
+  }
+
+  [forced-color-scheme="light"] {
+    @include light.scheme_light();
+  }
+
+  [forced-color-scheme="dark"] {
+    @include dark.scheme_dark();
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    @include dark.scheme_dark();
+  }
+
+  [forced-color-scheme="dark"] {
+    @include dark.scheme_dark();
+  }
+
+  [forced-color-scheme="light"] {
+    @include light.scheme_light();
+  }
+}

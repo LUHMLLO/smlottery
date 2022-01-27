@@ -46,7 +46,7 @@ export default defineConfig({
       extensions: ["vue", "md"],
       deep: true,
       dts: "dts/components.d.ts",
-      directoryAsNamespace: false,
+      directoryAsNamespace: true,
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
       exclude: [/[\\/]node_modules[\\/]/, /[\\/]\.git[\\/]/, /[\\/]\.nuxt[\\/]/],
     }),
