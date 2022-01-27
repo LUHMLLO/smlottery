@@ -7,9 +7,12 @@ useHead({
 //scroll event target
 const target_scroll = ref<null | HTMLDivElement>(null);
 
+//tabs interface
 interface tabsInterface {
   [key: string]: boolean;
 }
+
+//tabs object using Reactive from vue 3 composition api
 const tabs = reactive<tabsInterface>({
   crearClientes: true,
   configurarTickets: false,
@@ -18,6 +21,7 @@ const tabs = reactive<tabsInterface>({
   preguntasDeSeguridad: false,
 });
 
+//toggle the tabs
 function toggleTabs(adquiredKeyName: string): void {
   Object.entries(tabs).forEach(([key]) => {
     if (adquiredKeyName == key) {

@@ -1,8 +1,10 @@
+import path from "path";
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import AutoImport from "unplugin-auto-import/vite";
 import Pages from "vite-plugin-pages";
 import Components from "unplugin-vue-components/vite";
+import VueI18n from "@intlify/vite-plugin-vue-i18n";
 
 export default defineConfig({
   base: "/",
@@ -35,7 +37,7 @@ export default defineConfig({
       },
     }),
     AutoImport({
-      imports: ["vue", "@vueuse/core", "@vueuse/head", "vue-router"],
+      imports: ["vue", "@vueuse/core", "@vueuse/head", "vue-router", "vue-i18n"],
       dts: "dts/auto-imports.d.ts",
     }),
     Pages({
@@ -49,6 +51,11 @@ export default defineConfig({
       directoryAsNamespace: true,
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
       exclude: [/[\\/]node_modules[\\/]/, /[\\/]\.git[\\/]/, /[\\/]\.nuxt[\\/]/],
+    }),
+    VueI18n({
+      runtimeOnly: true,
+      compositionOnly: true,
+      include: [path.resolve(__dirname, "src/locales/**")],
     }),
   ],
 });
