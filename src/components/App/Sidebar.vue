@@ -3,6 +3,9 @@
 import { useSidebarStore } from "@/store/sidebar";
 const sidebar = useSidebarStore();
 
+//router
+const route = useRoute();
+
 //vueuse
 const target_sidebar = ref(null);
 onClickOutside(target_sidebar, () => sidebar.toggle());
@@ -78,31 +81,35 @@ const sidebarSections = [
 
 <template>
   <min-sidebar
-    class="gap-32 p-absolute top left bottom bg-dark h-100 w-auto depth-6-black-500"
+    class="p-absolute top bottom left w-auto h-auto m-auto bg-dark gap-32 depth-6-black-500 overflow-visible"
     scroll-y
     ref="target_sidebar"
     v-if="sidebar.state"
   >
-    <min-row content="end">
-      <i class="uil uil-multiply icon color-light" @click="sidebar.toggle"></i>
-    </min-row>
+    <min-thumbnail class="size-48 bg-none">
+      <img src="@/assets/icons8-clover-96.png" alt="logo" />
+    </min-thumbnail>
 
-    <h5 class="heading color-light">SMLottery</h5>
+    <min-section class="gap-8" v-for="role in sidebarSections">
+      <small class="font-xxs uppercase color-black-50">{{ role.level }}</small>
 
-    <min-column class="gap-32">
-      <min-column class="gap-16" v-for="role in sidebarSections">
-        <header>
-          <h6 class="color-primary">{{ role.level }}</h6>
-          <hr class="w-100 height-1" />
-        </header>
-
-        <min-section class="pl-8" v-for="section in role.sections">
-          <label class="label color-light">{{ section.title }}</label>
-          <min-column class="gap-8 p-8 color-accent">
-            <router-link :to="route.path" class="link" v-for="route in section.routes">{{ route.name }}</router-link>
-          </min-column>
-        </min-section>
+      <min-column class="gap-3" v-for="section in role.sections">
+        <label class="label color-white-700 uppercase">{{ section.title }}</label>
+        <min-column>
+          <router-link
+            :to="r.path"
+            type="button"
+            class="link w-100 p-8"
+            :class="[r.path == route.path ? 'bg-black-400' : 'border-none']"
+            v-for="r in section.routes"
+            >{{ r.name }}</router-link
+          >
+        </min-column>
       </min-column>
-    </min-column>
+    </min-section>
+
+    <min-fab class="top right size-24 mt-24 offset-r-5 bg-black-400" @click="sidebar.toggle">
+      <i class="uil uil-multiply font-xxs color-light" />
+    </min-fab>
   </min-sidebar>
 </template>

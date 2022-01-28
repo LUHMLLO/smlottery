@@ -20,7 +20,7 @@
   //state
   --theme-disabled: #737373 /*true-grey-500*/;
   --theme-highlight: ;
-  --theme-visited: ;
+  --theme-visited: var(--theme-accent);
   //state
   --theme-hover: ;
   --theme-pressed: ;

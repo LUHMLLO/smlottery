@@ -48,38 +48,38 @@
 //font tags parameters
 :root {
   //headings
-  --headings-size: calc(32 * var(--base-rem));
+  --headings-size: calc(24 * var(--base-rem));
   --headings-weight: var(--weight-extrabold);
   --headings-color: var(--theme-secondary);
 
   //subheadings
-  --subheadings-size: calc(24 * var(--base-rem));
+  --subheadings-size: calc(16 * var(--base-rem));
   --subheadings-weight: var(--weight-extrabold);
   --subheadings-color: var(--theme-secondary);
 
   //content
-  --content-size: calc(16 * var(--base-rem));
-  --content-weight: var(--weight-thin);
+  --content-size: calc(14 * var(--base-rem));
+  --content-weight: var(--weight-light);
   --content-color: var(--theme-ternary);
 
   //label,etc
-  --labels-size: calc(14 * var(--base-rem));
+  --labels-size: calc(10 * var(--base-rem));
   --labels-weight: var(--weight-medium);
   --labels-color: var(--content-color);
 
   //links
-  --links-size: calc(10 * var(--base-rem));
-  --links-weight: var(--weight-thin);
+  --links-size: calc(8 * var(--base-rem));
+  --links-weight: var(--weight-light);
   --links-color: var(--theme-accent);
 
   //icons
   --icons-size: calc(24 * var(--base-rem));
-  --icons-weight: var(--weight-thin);
+  --icons-weight: var(--weight-light);
   --icons-color: var(--content-color);
 
   //inputs
   --inputs-size: calc(14 * var(--base-rem));
-  --inputs-weight: var(--weight-thin);
+  --inputs-weight: var(--weight-light);
   --inputs-color: var(--content-color);
   --inputs-border: solid calc(1 * var(--base-rem));
   --inputs-background: transparent;
