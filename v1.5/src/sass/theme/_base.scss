@@ -4,9 +4,10 @@
   --base-gap: calc(16 * var(--base-rem));
   --base-padding: calc(24 * var(--base-rem));
   --base-margin: 0;
-  --base-background: var(--theme-primary);
+  --base-background: var(--theme-main);
   --base-hr-color: #d0d0d3 /*grey-100*/;
-  --base-light: #fff;
+  --base-light: #fff;  
+  --base-grey: #737373;
   --base-dark: #000;
   --overlays-color: rgba(0, 0, 0, 0.5);
 }

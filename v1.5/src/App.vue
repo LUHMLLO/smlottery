@@ -9,15 +9,13 @@ useHead({
 </script>
 
 <template>
-  <min-body sidebar-layout>
-    <AppSidebar />
+  <min-body>
     <min-app scroll-y>
       <AppHeader />
-      <min-content items="center" class="h-auto overflow-visible">
-        <min-container class="gap-32">
-          <router-view />
-        </min-container>
-      </min-content>
+      <AppMain fill>
+        <AppSidebar />
+        <AppContent />
+      </AppMain>
     </min-app>
     <min-overlays> </min-overlays>
   </min-body>

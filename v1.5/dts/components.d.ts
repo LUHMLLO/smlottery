@@ -4,7 +4,10 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
+    AppContent: typeof import('./../src/components/App/Content.vue')['default']
+    AppFooter: typeof import('./../src/components/App/Footer.vue')['default']
     AppHeader: typeof import('./../src/components/App/Header.vue')['default']
+    AppMain: typeof import('./../src/components/App/Main.vue')['default']
     AppSidebar: typeof import('./../src/components/App/Sidebar.vue')['default']
     ChartsBar: typeof import('./../src/components/Charts/Bar.vue')['default']
     ChartsLine: typeof import('./../src/components/Charts/Line.vue')['default']

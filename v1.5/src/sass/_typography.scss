@@ -48,57 +48,46 @@
 //font tags parameters
 :root {
   //headings
-  --headings-size: calc(24 * var(--base-rem));
-  --headings-weight: var(--weight-extrabold);
-  --headings-color: var(--theme-secondary);
+  --headings-size: calc(16 * var(--base-rem));
+  --headings-weight: var(--weight-black);
 
   //subheadings
-  --subheadings-size: calc(16 * var(--base-rem));
-  --subheadings-weight: var(--weight-extrabold);
-  --subheadings-color: var(--theme-secondary);
+  --subheadings-size: calc(12 * var(--base-rem));
+  --subheadings-weight: var(--weight-bold);
 
   //content
-  --content-size: calc(14 * var(--base-rem));
-  --content-weight: var(--weight-light);
-  --content-color: var(--theme-ternary);
+  --content-size: calc(12 * var(--base-rem));
+  --content-weight: var(--weight-regular);
 
   //label,etc
-  --labels-size: calc(10 * var(--base-rem));
-  --labels-weight: var(--weight-medium);
-  --labels-color: var(--content-color);
+  --labels-size: calc(12 * var(--base-rem));
+  --labels-weight: var(--weight-regular);
 
   //links
-  --links-size: calc(8 * var(--base-rem));
-  --links-weight: var(--weight-light);
-  --links-color: var(--theme-accent);
+  --links-size: calc(12 * var(--base-rem));
+  --links-weight: var(--weight-regular);
 
   //icons
-  --icons-size: calc(24 * var(--base-rem));
-  --icons-weight: var(--weight-light);
-  --icons-color: var(--content-color);
+  --icons-size: calc(16 * var(--base-rem));
+  --icons-weight: var(--weight-regular);
 
   //inputs
-  --inputs-size: calc(14 * var(--base-rem));
-  --inputs-weight: var(--weight-light);
-  --inputs-color: var(--content-color);
+  --inputs-size: calc(12 * var(--base-rem));
+  --inputs-weight: var(--weight-regular);
   --inputs-border: solid calc(1 * var(--base-rem));
   --inputs-background: transparent;
   --inputs-padding: calc(12 * var(--base-rem)) calc(16 * var(--base-rem));
 
   //buttons
-  --buttons-size: calc(14 * var(--base-rem));
+  --buttons-size: calc(12 * var(--base-rem));
   --buttons-weight: var(--weight-regular);
-  --buttons-color: var(--content-color);
   --buttons-border: solid calc(1 * var(--base-rem));
-  --buttons-background: transparent;
   --buttons-padding: calc(12 * var(--base-rem)) calc(24 * var(--base-rem));
 
   //floating buttons
   --fabs-size: calc(24 * var(--base-rem));
   --fabs-weight: var(--weight-regular);
-  --fabs-color: var(--content-color);
   --fabs-border: solid calc(1 * var(--base-rem));
-  --fabs-background: transparent;
   --fabs-padding: calc(0 * var(--base-rem));
   --fabs-radius: calc(48 * var(--base-rem));
   --fabs-width-height: calc(48 * var(--base-rem));
