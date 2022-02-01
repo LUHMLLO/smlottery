@@ -1,0 +1,12 @@
+//base parameters
+:root {
+  --base-rem: 0.0625rem;
+  --base-gap: calc(16 * var(--base-rem));
+  --base-padding: calc(24 * var(--base-rem));
+  --base-margin: 0;
+  --base-background: var(--theme-primary);
+  --base-hr-color: #d0d0d3 /*grey-100*/;
+  --base-light: #fff;
+  --base-dark: #000;
+  --overlays-color: rgba(0, 0, 0, 0.5);
+}

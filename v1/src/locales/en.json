@@ -1,0 +1,6 @@
+{
+  "hello": "Hello",
+  "explaining": "this is the i18n plugin in action",
+  "more-info-click-here": "click here for more info",
+  "toggle-language": "toggle language"
+}

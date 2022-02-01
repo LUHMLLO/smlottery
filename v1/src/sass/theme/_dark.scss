@@ -1,0 +1,28 @@
+//theme colors
+@mixin scheme_dark() {
+  //50%
+  --theme-primary: #f2f2f2 /*light-grey-500*/;
+  //25%
+  --theme-secondary: #000000 /*black-500*/;
+  //15%
+  --theme-ternary: #2e2e2e /*black-300*/;
+  //10%
+  --theme-accent: #37eeb1 /*emerald-300*/;
+  //?%
+  --theme-complementary: ;
+
+  //helper
+  --theme-error: #ef4444 /*red-500*/;
+  --theme-info: #64748b /*blue-grey-500*/;
+  --theme-succes: #37eeb1 /*emerald-300*/;
+  --theme-warning: #f59e0b /*amber-500*/;
+
+  //state
+  --theme-disabled: #737373 /*true-grey-500*/;
+  --theme-highlight: ;
+  --theme-visited: var(--theme-accent);
+  //state
+  --theme-hover: ;
+  --theme-pressed: ;
+  --theme-focus: ;
+}
