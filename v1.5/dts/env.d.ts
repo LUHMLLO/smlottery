@@ -18,3 +18,5 @@ interface ImportMetaEnv {
   readonly VITE_Endpoint_API: string;
   readonly VITE_Faker_URL: string;
 }
+
+declare module '@intlify/vite-plugin-vue-i18n/messages'

@@ -21,9 +21,11 @@ export default defineConfig({
     ],
   },
   build: {
+    sourcemap: false,
+    minify: false,
     cssCodeSplit: true,
     chunkSizeWarningLimit: 2000,
-    minify: false,
+    brotliSize: false,
   },
   optimizeDeps: {
     include: ["vue", "vue-router", "pinia", "@vueuse/core", "@vueuse/head", "sass", "axios", "mindesignsystem"],
@@ -44,7 +46,7 @@ export default defineConfig({
       dirs: [{ dir: "src/views", baseRoute: "" }],
     }),
     Components({
-      dirs: ["src/components"],
+      dirs: ["src/components", "src/layouts"],
       extensions: ["vue", "md"],
       deep: true,
       dts: "dts/components.d.ts",

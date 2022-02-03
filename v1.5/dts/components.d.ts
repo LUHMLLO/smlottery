@@ -4,13 +4,13 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
-    AppContent: typeof import('./../src/components/App/Content.vue')['default']
-    AppFooter: typeof import('./../src/components/App/Footer.vue')['default']
-    AppHeader: typeof import('./../src/components/App/Header.vue')['default']
-    AppMain: typeof import('./../src/components/App/Main.vue')['default']
-    AppSidebar: typeof import('./../src/components/App/Sidebar.vue')['default']
-    ChartsBar: typeof import('./../src/components/Charts/Bar.vue')['default']
-    ChartsLine: typeof import('./../src/components/Charts/Line.vue')['default']
+    AppContent: typeof import('./../src/components/app/Content.vue')['default']
+    AppFooter: typeof import('./../src/components/app/Footer.vue')['default']
+    AppHeader: typeof import('./../src/components/app/Header.vue')['default']
+    AppMain: typeof import('./../src/components/app/Main.vue')['default']
+    AppSidebar: typeof import('./../src/components/app/Sidebar.vue')['default']
+    ChartsBar: typeof import('./../src/components/charts/Bar.vue')['default']
+    ChartsLine: typeof import('./../src/components/charts/Line.vue')['default']
     SuperadminCompaniesCreateClientsFormsDetails: typeof import('./../src/components/superadmin/companies/create-clients/forms/details.vue')['default']
     SuperadminCompaniesCreateClientsFormsLicenses: typeof import('./../src/components/superadmin/companies/create-clients/forms/licenses.vue')['default']
     SuperadminCompaniesCreateClientsFormsRaffles: typeof import('./../src/components/superadmin/companies/create-clients/forms/raffles.vue')['default']
