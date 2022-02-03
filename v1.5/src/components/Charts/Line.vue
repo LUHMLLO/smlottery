@@ -1,33 +1,20 @@
 <script setup lang="ts">
-import { LineChart } from "vue-chart-3";
-
-import { Chart, LineController, CategoryScale, LinearScale, PointElement, LineElement } from "chart.js";
-
-Chart.register(LineController, CategoryScale, LinearScale, PointElement, LineElement);
-
-const dataValues = ref([12, 14, 16, 18, 11, 13, 15]);
-
-const data = computed(() => ({
-  labels: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
-  datasets: [
-    {
-      label: "Foo",
-      data: dataValues.value,
-      backgroundColor: "#dc322f",
-    },
-  ],
-}));
-
-const options = ref({
-  responsive: true,
-  plugins: {
-    title: {
-      text: "Line",
-    },
+const options = {
+  chart: {
+    id: "vuechart-example",
   },
-});
+  xaxis: {
+    categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998],
+  },
+};
+const series = [
+  {
+    name: "series-1",
+    data: [30, 40, 45, 50, 49, 60, 70, 91],
+  },
+];
 </script>
 
 <template>
-  <LineChart :chart-data="data" :options="options" css-classes="chart-container" />
+  <apexchart type="line" :options="options" :series="series" class="w-100 h-100" fill />
 </template>

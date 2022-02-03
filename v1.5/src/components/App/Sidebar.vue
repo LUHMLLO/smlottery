@@ -1,7 +1,4 @@
 <script setup lang="ts">
-//pinia
-import { useSidebarStore } from "@/store/sidebar";
-
 //router
 const use_route = useRoute();
 
@@ -193,7 +190,7 @@ const sidebars = [
       <hr class="bg-ternary opacity-50 width-2 h-100" />
 
       <template v-for="role in sidebar.roles">
-        <min-column class="h-100 w-auto" scroll-y v-if="role.name == activeSidebarRole">
+        <min-column class="h-100 width-200" scroll-y v-if="role.name == activeSidebarRole">
           <min-section v-for="section in role.sections">
             <header class="py-16 px-24">
               <h6 class="subheading uppercase">{{ section.title }}</h6>

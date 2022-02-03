@@ -1,24 +1,11 @@
 @mixin scheme_light() {
-  --theme-main: #fff /*black-500*/;
+  --theme-main: #f2f2f2 /*light-grey-500*/;
   //50%
-  --theme-primary: #f8faff /*blue-50*/;
+  --theme-primary: #fff /*white-500*/;
   //25%
-  --theme-secondary: #000000 /*black-500*/;
+  --theme-secondary: #e8e8e8 /*white-600*/;
   //15%
-  --theme-ternary: #2e2e2e /*black-300*/;
-  //10%
-  --theme-accent: #eab308 /*yellow-500*/;
-  //?%
-  --theme-complementary: #2e2e2e /*black-300*/;
-}
-//theme colors
-@mixin scheme_dark() {
-  //50%
-  --theme-primary: #f2f2f2 /*light-grey-500*/;
-  //25%
-  --theme-secondary: #000000 /*black-500*/;
-  //15%
-  --theme-ternary: #2e2e2e /*black-300*/;
+  --theme-ternary: #d1d1d1 /*white-700*/;
   //10%
   --theme-accent: #37eeb1 /*emerald-300*/;
   //?%
@@ -33,9 +20,38 @@
   //state
   --theme-disabled: #737373 /*true-grey-500*/;
   --theme-highlight: ;
-  --theme-visited: ;
+  --theme-visited: var(--theme-accent);
   //state
   --theme-hover: ;
   --theme-pressed: ;
   --theme-focus: ;
+
+  //headings
+  --headings-color: var(--base-dark);
+
+  //subheadings
+  --subheadings-color: var(--base-dark);
+
+  //content
+  --content-color: var(--base-dark);
+
+  //label,etc
+  --labels-color: var(--base-dark);
+
+  //links
+  --links-color: var(--theme-accent);
+
+  //icons
+  --icons-color: var(--base-dark);
+
+  //inputs
+  --inputs-color: var(--base-dark);
+
+  //buttons
+  --buttons-color: var(--base-dark);
+  --buttons-background: transparent;
+
+  //floating buttons
+  --fabs-color: var(--base-dark);
+  --fabs-background: transparent;
 }

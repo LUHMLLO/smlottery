@@ -1,10 +1,14 @@
 <script setup lang="ts">
-//router
-const route = useRoute();
+import { useThemeStore } from "@/store/theme";
 
-//vueuse
+const theme = useThemeStore();
+
 useHead({
-  title: `smlottery - ${route.meta.name}`,
+  title: "SMLottery",
+});
+
+onBeforeMount(() => {
+  theme.check();
 });
 </script>
 
@@ -17,6 +21,8 @@ useHead({
         <AppContent />
       </AppMain>
     </min-app>
-    <min-overlays> </min-overlays>
+    <min-overlays>
+      <AppFloatingSidebar />
+    </min-overlays>
   </min-body>
 </template>
