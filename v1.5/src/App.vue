@@ -14,11 +14,11 @@ onBeforeMount(() => {
 
 <template>
   <min-body>
-    <min-app scroll-y>
+    <min-app>
       <AppHeader />
       <AppMain fill>
-        <AppSidebar />
-        <AppContent />
+        <AppSidebar scroll-y fill />
+        <AppContent scroll-y fill />
       </AppMain>
     </min-app>
     <min-overlays>
