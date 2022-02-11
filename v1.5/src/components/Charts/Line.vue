@@ -43,3 +43,7 @@ const series = [
 <template>
   <apexchart type="line" :options="options" :series="series" />
 </template>
+<!-- 
+<style scoped>
+@import url("../../../node_modules/apexcharts/dist/apexcharts.css");
+</style> -->

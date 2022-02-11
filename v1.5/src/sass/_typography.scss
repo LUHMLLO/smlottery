@@ -72,11 +72,11 @@
   --icons-weight: var(--weight-regular);
 
   //inputs
-  --inputs-size: calc(12 * var(--base-rem));
+  --inputs-size: calc(10 * var(--base-rem));
   --inputs-weight: var(--weight-regular);
   --inputs-border: solid calc(1 * var(--base-rem));
   --inputs-background: transparent;
-  --inputs-padding: calc(12 * var(--base-rem)) calc(16 * var(--base-rem));
+  --inputs-padding: calc(6 * var(--base-rem)) calc(8 * var(--base-rem));
 
   //buttons
   --buttons-size: calc(12 * var(--base-rem));

@@ -2,6 +2,7 @@
 import { useThemeStore } from "@/store/theme";
 
 const theme = useThemeStore();
+const route = useRoute();
 
 useHead({
   title: "SMLottery",
@@ -16,10 +17,16 @@ onBeforeMount(() => {
   <min-body>
     <min-app>
       <AppHeader />
-      <AppMain fill>
-        <AppSidebar scroll-y fill />
-        <AppContent scroll-y fill />
-      </AppMain>
+      <min-main class="flex-row p-0" fill>
+        <AppSidebar />
+        <min-content class="p-48" fill scroll-y>
+          <min-container class="gap-24">
+            <router-view v-slot="{ Component }">
+              <component :is="Component" :key="route.fullPath" />
+            </router-view>
+          </min-container>
+        </min-content>
+      </min-main>
     </min-app>
     <min-overlays>
       <AppFloatingSidebar />

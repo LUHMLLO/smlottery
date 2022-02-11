@@ -1,11 +1,11 @@
 <script setup lang="ts">
 //vueuse
 useHead({
-  title: "smlottery - crud",
+  title: "smlottery - create client",
 });
 
 //scroll event target
-const target_scroll = ref<null | HTMLDivElement>(null);
+//const target_scroll = ref<null | HTMLDivElement>(null);
 
 //tabs interface
 interface tabsInterface {
@@ -14,11 +14,11 @@ interface tabsInterface {
 
 //tabs object using Reactive from vue 3 composition api
 const tabs = reactive<tabsInterface>({
-  crearClientes: true,
-  configurarTickets: false,
-  sorteosAutomaticos: false,
-  planesYLicencias: false,
-  preguntasDeSeguridad: false,
+  details: true,
+  tickets: false,
+  raffles: false,
+  licenses: false,
+  security: false,
 });
 
 //toggle the tabs
@@ -34,24 +34,36 @@ function toggleTabs(adquiredKeyName: string): void {
 </script>
 
 <template>
-  <min-row content="center" items="center">
-    <min-tabs ref="target_scroll" class="d-flex flex-row whitespace-nowrap" scroll-x>
-      <button @click="toggleTabs('crearClientes')" class="pl-32">Datos de Empresa</button>
-      <button @click="toggleTabs('configurarTickets')">Configuracion Tickets</button>
-      <button @click="toggleTabs('sorteosAutomaticos')">Sorteos Automaticos</button>
-      <button @click="toggleTabs('planesYLicencias')">Planes y Licencias</button>
-      <button @click="toggleTabs('preguntasDeSeguridad')" class="pr-32">Preguntas de Seguridad</button>
-    </min-tabs>
-    <min-fab class="left bg-primary offset-l-30" @click="target_scroll!.scrollLeft = -128">
-      <i class="uil uil-arrow-left icon" />
-    </min-fab>
-    <min-fab class="right bg-primary offset-r-30" @click="target_scroll!.scrollLeft = 128">
-      <i class="uil uil-arrow-right icon" />
-    </min-fab>
-  </min-row>
-  <Superadmin-Companies-CreateClients-Forms-Details v-if="tabs.crearClientes" />
-  <Superadmin-Companies-Create-Clients-Forms-Tickets v-if="tabs.configurarTickets" />
-  <Superadmin-Companies-Create-Clients-Forms-Raffles v-if="tabs.sorteosAutomaticos" />
-  <Superadmin-Companies-Create-Clients-Forms-Licenses v-if="tabs.planesYLicencias" />
-  <Superadmin-Companies-Create-Clients-Forms-Security v-if="tabs.preguntasDeSeguridad" />
+  <min-tabs class="bg-primary">
+    <min-tabs-header>
+      <button tab @click="toggleTabs('details')" :class="[tabs.details && 'bg-secondary']">
+        <label :class="[tabs.details && 'color-accent']"> Business Details </label>
+        <hr class="height-2" :class="[tabs.details ? 'bg-accent' : 'bg-secondary']" />
+      </button>
+      <button tab @click="toggleTabs('tickets')" :class="[tabs.tickets && 'bg-secondary']">
+        <label :class="[tabs.tickets && 'color-accent']">Tickets Config</label>
+        <hr class="height-2" :class="[tabs.tickets ? 'bg-accent' : 'bg-secondary']" />
+      </button>
+      <button tab @click="toggleTabs('raffles')" :class="[tabs.raffles && 'bg-secondary']">
+        <label :class="[tabs.raffles && 'color-accent']">Automatic Raffles</label>
+        <hr class="height-2" :class="[tabs.raffles ? 'bg-accent' : 'bg-secondary']" />
+      </button>
+      <button tab @click="toggleTabs('licenses')" :class="[tabs.licenses && 'bg-secondary']">
+        <label :class="[tabs.licenses && 'color-accent']">Plans & Licenses</label>
+        <hr class="height-2" :class="[tabs.licenses ? 'bg-accent' : 'bg-secondary']" />
+      </button>
+      <button tab @click="toggleTabs('security')" :class="[tabs.security && 'bg-secondary']">
+        <label :class="[tabs.security && 'color-accent']">Security</label>
+        <hr class="height-2" :class="[tabs.security ? 'bg-accent' : 'bg-secondary']" />
+      </button>
+    </min-tabs-header>
+
+    <min-tabs-content class="p-48 gap-24">
+      <Forms-CreateClients-Details v-if="tabs.details" />
+      <Forms-CreateClients-Tickets v-if="tabs.tickets" />
+      <Forms-CreateClients-Raffles v-if="tabs.raffles" />
+      <Forms-CreateClients-Licenses v-if="tabs.licenses" />
+      <Forms-CreateClients-Security v-if="tabs.security" />
+    </min-tabs-content>
+  </min-tabs>
 </template>
