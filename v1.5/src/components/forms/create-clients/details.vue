@@ -20,7 +20,7 @@
     <input type="text" class="radius-6 border-w-2 border-secondary" />
   </min-input>
   <!------------------------------------------------------------------------------------------->
-  <min-input class="gap-6 overflow-visible z-index-2">
+  <min-input class="gap-6 overflow-visible z-index-4">
     <label class="label">Currency</label>
     <min-wrapper>
       <min-dropdown class="gap-6">
@@ -39,7 +39,7 @@
     </min-wrapper>
   </min-input>
   <!------------------------------------------------------------------------------------------->
-  <min-input class="gap-6 overflow-visible">
+  <min-input class="gap-6 overflow-visible z-index-3">
     <label class="label">Panel Language</label>
     <min-row class="gap-24">
       <min-dropdown class="gap-6">
@@ -149,8 +149,8 @@
   <min-input class="gap-6">
     <label class="label">Phone Services</label>
     <min-toggle class="radius-6 border-w-2 border-secondary bg-primary">
-      <label/>
       <input type="checkbox" />
+      <label/>
     </min-toggle>
   </min-input>
   <!------------------------------------------------------------------------------------------->

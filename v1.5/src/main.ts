@@ -1,6 +1,6 @@
-//import "mindesignsystem";
-import "../../../mindesignsystem/src/sass-framework/sass/core/main.scss";
-import "../../../mindesignsystem/src/sass-framework/sass/classes/main.scss";
+import "mindesignsystem";
+// import "../../../mindesignsystem/src/sass-framework/sass/core/main.scss";
+// import "../../../mindesignsystem/src/sass-framework/sass/classes/main.scss";
 import "@/sass/main.scss";
 
 import { createApp } from "vue";
