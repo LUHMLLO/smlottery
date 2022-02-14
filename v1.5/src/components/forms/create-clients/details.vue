@@ -148,7 +148,7 @@
   <!------------------------------------------------------------------------------------------->
   <min-input class="gap-6">
     <label class="label">Phone Services</label>
-    <min-toggle class="radius-6 border-w-2 border-secondary bg-primary">
+    <min-toggle class="radius-128 border-w-2 border-secondary bg-primary">
       <input type="checkbox" />
       <label/>
     </min-toggle>
