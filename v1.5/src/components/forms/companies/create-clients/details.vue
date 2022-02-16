@@ -150,7 +150,7 @@
     <label class="label">Phone Services</label>
     <min-toggle class="radius-128 border-w-2 border-secondary bg-primary">
       <input type="checkbox" />
-      <label/>
+      <label class="border-ternary"/>
     </min-toggle>
   </min-input>
   <!------------------------------------------------------------------------------------------->
