@@ -1,3 +1,7 @@
+<route lang="yaml">
+name: "Create Client"
+</route>
+
 <script setup lang="ts">
 //vueuse
 useHead({
@@ -59,11 +63,11 @@ function toggleTabs(adquiredKeyName: string): void {
     </min-tabs-header>
 
     <min-tabs-content class="p-48 gap-24">
-      <Forms-CreateClients-Details v-if="tabs.details" />
-      <Forms-CreateClients-Tickets v-if="tabs.tickets" />
-      <Forms-CreateClients-Raffles v-if="tabs.raffles" />
-      <Forms-CreateClients-Licenses v-if="tabs.licenses" />
-      <Forms-CreateClients-Security v-if="tabs.security" />
+      <Forms-Companies-CreateClients-Details v-if="tabs.details" />
+      <Forms-Companies-CreateClients-Tickets v-if="tabs.tickets" />
+      <Forms-Companies-CreateClients-Raffles v-if="tabs.raffles" />
+      <Forms-Companies-CreateClients-Licenses v-if="tabs.licenses" />
+      <Forms-Companies-CreateClients-Security v-if="tabs.security" />
     </min-tabs-content>
   </min-tabs>
 </template>

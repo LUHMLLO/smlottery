@@ -10,11 +10,13 @@ declare module 'vue' {
     AppSidebar: typeof import('./../src/components/app/Sidebar.vue')['default']
     ChartsBar: typeof import('./../src/components/charts/Bar.vue')['default']
     ChartsLine: typeof import('./../src/components/charts/Line.vue')['default']
-    FormsCreateClientsDetails: typeof import('./../src/components/forms/create-clients/details.vue')['default']
-    FormsCreateClientsLicenses: typeof import('./../src/components/forms/create-clients/licenses.vue')['default']
-    FormsCreateClientsRaffles: typeof import('./../src/components/forms/create-clients/raffles.vue')['default']
-    FormsCreateClientsSecurity: typeof import('./../src/components/forms/create-clients/security.vue')['default']
-    FormsCreateClientsTickets: typeof import('./../src/components/forms/create-clients/tickets.vue')['default']
+    FormsCompaniesCreateClientsDetails: typeof import('./../src/components/forms/companies/create-clients/details.vue')['default']
+    FormsCompaniesCreateClientsLicenses: typeof import('./../src/components/forms/companies/create-clients/licenses.vue')['default']
+    FormsCompaniesCreateClientsRaffles: typeof import('./../src/components/forms/companies/create-clients/raffles.vue')['default']
+    FormsCompaniesCreateClientsSecurity: typeof import('./../src/components/forms/companies/create-clients/security.vue')['default']
+    FormsCompaniesCreateClientsTickets: typeof import('./../src/components/forms/companies/create-clients/tickets.vue')['default']
+    FormsCompaniesMonitoring: typeof import('./../src/components/forms/companies/monitoring.vue')['default']
+    FormsCompaniesRaffles: typeof import('./../src/components/forms/companies/raffles.vue')['default']
   }
 }
 

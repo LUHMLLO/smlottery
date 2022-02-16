@@ -16,15 +16,15 @@
   </min-row>
   <!--------------------------------------------------------------------------------------------->
 
-  <min-grid class="grid-4 gap-24">
-    <min-column class="bg-primary p-24" v-for="col in 4">
-      <min-row items="center">
+  <min-row class="gap-24" wrap>
+    <min-column class="bg-primary p-24 w-auto" grow v-for="col in 4">
+      <min-row items="center" class="gap-24">
         <p class="content w-100">total sales</p>
         <i items="center" class="uil uil-analysis bg-accent radius-24 size-24"></i>
       </min-row>
       <h5 class="bold">641.5k</h5>
     </min-column>
-  </min-grid>
+  </min-row>
   <!--------------------------------------------------------------------------------------------->
   <min-grid class="grid-2 gap-24">
     <min-column class="bg-primary p-24 gap-24" v-for="col in 2">

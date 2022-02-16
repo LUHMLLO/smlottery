@@ -21,6 +21,7 @@ onBeforeMount(() => {
         <AppSidebar />
         <min-content class="p-48" fill scroll-y>
           <min-container class="gap-24">
+            <h5>{{route.name}}</h5>
             <router-view v-slot="{ Component }">
               <component :is="Component" :key="route.fullPath" />
             </router-view>

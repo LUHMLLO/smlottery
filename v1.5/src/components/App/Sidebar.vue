@@ -1,12 +1,14 @@
 <script setup lang="ts">
-//router
+import { use_sidebar_active_role_store } from "@/store/sidebar.active.role";
+
+const activeSidebarRole = use_sidebar_active_role_store();
 const use_route = useRoute();
 
+onMounted(() => {
+  activeSidebarRole.isActive();
+});
 //vanilla object with arrays
-const target_sidebar = ref<null | HTMLDivElement>(null);
-const activeSidebarRole = ref("");
-const setActiveSidebarRole = (role: string) => (activeSidebarRole.value = role);
-onClickOutside(target_sidebar.value, () => (activeSidebarRole.value = ""));
+//const target_sidebar = ref<null | HTMLDivElement>(null);
 
 const sidebars = [
   {
@@ -172,9 +174,9 @@ const sidebars = [
         <min-section class="h-100">
           <button
             class="p-24 size-72 border-none"
-            :class="[role.name == activeSidebarRole ? 'bg-accent' : '']"
+            :class="[role.name == activeSidebarRole.role ? 'bg-accent' : '']"
             v-for="role in sidebar.roles"
-            @click="setActiveSidebarRole(role.name)"
+            @click="activeSidebarRole.set({ role: role.name })"
           >
             <i class="icon font-lg" :class="role.icon"></i>
           </button>
@@ -190,7 +192,7 @@ const sidebars = [
       <hr class="bg-ternary opacity-50 width-2 h-100" />
 
       <template v-for="role in sidebar.roles">
-        <min-column class="h-100 width-200" scroll-y v-if="role.name == activeSidebarRole">
+        <min-column class="h-100 width-200" scroll-y v-if="role.name == activeSidebarRole.role">
           <min-section v-for="section in role.sections">
             <header class="py-16 px-24">
               <h6 class="subheading uppercase">{{ section.title }}</h6>
