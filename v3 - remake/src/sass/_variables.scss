@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+//theme colors
+:root {
+  //60%
+  --theme-primary: #f2f2f2 /*offwhite-600*/;
+  //15%
+  --theme-secondary: #fff /*white-500*/;
+  //10%
+  --theme-tertiary: #19191b /*grey-900*/;
+  //5%
+  --theme-quaternary: #71717a /*grey-500*/;
+  //5%
+  --theme-quinary: #d7d7da /*grey-50*/;
+  //5%
+  --theme-accent: #10b981 /*emerald-500*/;
+
+  //helper
+  --theme-error: #ef4444 /*red-500*/;
+  --theme-info: #64748b /*blue-grey-500*/;
+  --theme-succes: #37eeb1 /*emerald-300*/;
+  --theme-warning: #f59e0b /*amber-500*/;
+
+  //state
+  --theme-disabled: #737373 /*true-grey-500*/;
+  --theme-highlight: ;
+  --theme-visited: ;
+  //state
+  --theme-hover: ;
+  --theme-pressed: ;
+  --theme-focus: ;
+}
+
+//base parameters
+:root {
+  --base-rem: 0.0625rem;
+  --base-gap: calc(16 * var(--base-rem));
+  --base-padding: calc(24 * var(--base-rem));
+  --base-margin: 0;
+  --base-background: var(--theme-primary);
+  --base-hr-color: #d0d0d3 /*grey-100*/;
+  --base-light: #fff;
+  --base-dark: #000;
+  --overlays-color: rgba(0, 0, 0, 0.5);
+}
+
+//table parameters
+:root {
+  --table-th-padding: calc(12 * var(--base-rem)) 0;
+  --table-td-padding: calc(16 * var(--base-rem)) 0;
+  --table-border-color: #d0d0d3 /*grey-100*/;
+}
+
+//font parameters
+:root {
+  //fonts
+  --font-scaling: 16px;
+  --font-height: 1.5;
+  --font-spacing: 0;
+
+  //fonts
+  --font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+
+  --font-serif: serif;
+  --font-sans: "Montserrat", sans-serif;
+  --font-mono: monospace;
+
+  //fonts
+  --font-2xxl: calc(88 * var(--base-rem));
+  --font-xxl: calc(72 * var(--base-rem));
+  --font-4xl: calc(64 * var(--base-rem));
+  --font-3xl: calc(56 * var(--base-rem));
+  --font-2xl: calc(48 * var(--base-rem));
+  --font-xl: calc(32 * var(--base-rem));
+  --font-lg: calc(24 * var(--base-rem));
+  --font-regular: calc(16 * var(--base-rem));
+  --font-md: calc(14 * var(--base-rem));
+  --font-sm: calc(12 * var(--base-rem));
+  --font-xs: calc(10 * var(--base-rem));
+  --font-xxs: calc(8 * var(--base-rem));
+
+  --weight-black: 900;
+  --weight-extrabold: 800;
+  --weight-bold: 700;
+  --weight-semibold: 600;
+  --weight-medium: 500;
+  --weight-regular: 400;
+  --weight-light: 300;
+  --weight-thin: 200;
+  --weight-extralight: 100;
+}
+
+//font tags parameters
+:root {
+  //headings
+  --headings-size: calc(32 * var(--base-rem));
+  --headings-weight: var(--weight-extrabold);
+  --headings-color: var(--theme-secondary);
+
+  //subheadings
+  --subheadings-size: calc(24 * var(--base-rem));
+  --subheadings-weight: var(--weight-extrabold);
+  --subheadings-color: var(--theme-secondary);
+
+  //content
+  --content-size: calc(16 * var(--base-rem));
+  --content-weight: var(--weight-thin);
+  --content-color: var(--theme-ternary);
+
+  //label,etc
+  --labels-size: calc(14 * var(--base-rem));
+  --labels-weight: var(--weight-medium);
+  --labels-color: var(--content-color);
+
+  //links
+  --links-size: calc(10 * var(--base-rem));
+  --links-weight: var(--weight-thin);
+  --links-color: var(--theme-accent);
+
+  //icons
+  --icons-size: calc(24 * var(--base-rem));
+  --icons-weight: var(--weight-thin);
+  --icons-color: var(--content-color);
+
+  //inputs
+  --inputs-size: calc(14 * var(--base-rem));
+  --inputs-weight: var(--weight-thin);
+  --inputs-color: var(--content-color);
+  --inputs-border: solid calc(1 * var(--base-rem));
+  --inputs-background: transparent;
+  --inputs-padding: calc(12 * var(--base-rem)) calc(16 * var(--base-rem));
+
+  //buttons
+  --buttons-size: calc(14 * var(--base-rem));
+  --buttons-weight: var(--weight-regular);
+  --buttons-color: var(--content-color);
+  --buttons-border: solid calc(1 * var(--base-rem));
+  --buttons-background: transparent;
+  --buttons-padding: calc(12 * var(--base-rem)) calc(24 * var(--base-rem));
+
+  //floating buttons
+  --fabs-size: calc(24 * var(--base-rem));
+  --fabs-weight: var(--weight-regular);
+  --fabs-color: var(--content-color);
+  --fabs-border: solid calc(1 * var(--base-rem));
+  --fabs-background: transparent;
+  --fabs-padding: calc(0 * var(--base-rem));
+  --fabs-radius: calc(48 * var(--base-rem));
+  --fabs-width-height: calc(48 * var(--base-rem));
+}

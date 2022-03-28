@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+
+    "target": "esnext",
+    "module": "esnext",
+
+    "strict": true,
+    "jsx": "preserve",
+
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+
+    "isolatedModules": false,
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
+    "noUnusedParameters": true,
+    "useDefineForClassFields": true,
+
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
+
+    "types": [
+      "@types/node",
+      "@types/debug",
+      "vite/client",
+      "vite-plugin-pages/client",
+      "@intlify/vite-plugin-vue-i18n/client"
+    ],
+
+    "paths": {
+      "~/*": ["./src/assets/*"],
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "dts/auto-imports.d.ts",
+    "dts/components.d.ts",
+    "dts/env.d.ts",
+
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+
+    "vite.config.ts"
+  ],
+  "exclude": ["node_modules", "examples", "dist", "public"]
+}

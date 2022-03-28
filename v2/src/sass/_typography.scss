@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+//table parameters
+:root {
+  --table-th-padding: calc(12 * var(--base-rem)) 0;
+  --table-td-padding: calc(16 * var(--base-rem)) 0;
+  --table-border-color: #d0d0d3 /*grey-100*/;
+}
+
+//font parameters
+:root {
+  //fonts
+  --font-scaling: 16px;
+  --font-height: 1.5;
+  --font-spacing: 0;
+
+  //fonts
+  --font-family: Work Sans;
+
+  --font-serif: serif;
+  --font-sans: Work Sans;
+  --font-mono: monospace;
+
+  //fonts
+  --font-5xl: calc(128 * var(--base-rem));
+  --font-4xl: calc(72 * var(--base-rem));
+  --font-3xl: calc(64 * var(--base-rem));
+  --font-2xl: calc(48 * var(--base-rem));
+  --font-xl: calc(32 * var(--base-rem));
+  --font-lg: calc(24 * var(--base-rem));
+  --font-regular: calc(16 * var(--base-rem));
+  --font-md: calc(14 * var(--base-rem));
+  --font-sm: calc(12 * var(--base-rem));
+  --font-xs: calc(10 * var(--base-rem));
+  --font-xxs: calc(8 * var(--base-rem));
+
+  --weight-black: 900;
+  --weight-extrabold: 800;
+  --weight-bold: 700;
+  --weight-semibold: 600;
+  --weight-medium: 500;
+  --weight-regular: 400;
+  --weight-light: 300;
+  --weight-thin: 200;
+  --weight-extralight: 100;
+}
+
+//font tags parameters
+:root {
+  //headings
+  --headings-size: calc(16 * var(--base-rem));
+  --headings-weight: var(--weight-black);
+
+  //subheadings
+  --subheadings-size: calc(12 * var(--base-rem));
+  --subheadings-weight: var(--weight-bold);
+
+  //content
+  --content-size: calc(12 * var(--base-rem));
+  --content-weight: var(--weight-regular);
+
+  //label,etc
+  --labels-size: calc(12 * var(--base-rem));
+  --labels-weight: var(--weight-regular);
+
+  //links
+  --links-size: calc(12 * var(--base-rem));
+  --links-weight: var(--weight-regular);
+
+  //icons
+  --icons-size: calc(16 * var(--base-rem));
+  --icons-weight: var(--weight-regular);
+
+  //inputs
+  --inputs-size: calc(10 * var(--base-rem));
+  --inputs-weight: var(--weight-regular);
+  --inputs-border: solid calc(1 * var(--base-rem));
+  --inputs-background: transparent;
+  --inputs-padding: calc(6 * var(--base-rem)) calc(8 * var(--base-rem));
+
+  //buttons
+  --buttons-size: calc(12 * var(--base-rem));
+  --buttons-weight: var(--weight-regular);
+  --buttons-border: solid calc(1 * var(--base-rem));
+  --buttons-padding: calc(12 * var(--base-rem)) calc(24 * var(--base-rem));
+
+  //floating buttons
+  --fabs-size: calc(24 * var(--base-rem));
+  --fabs-weight: var(--weight-regular);
+  --fabs-border: solid calc(1 * var(--base-rem));
+  --fabs-padding: calc(0 * var(--base-rem));
+  --fabs-radius: calc(48 * var(--base-rem));
+  --fabs-width-height: calc(48 * var(--base-rem));
+}

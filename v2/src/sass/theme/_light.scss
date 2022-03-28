@@ -1,0 +1,57 @@
+@mixin scheme_light() {
+  --theme-main: #f2f2f2 /*light-grey-500*/;
+  //50%
+  --theme-primary: #fff /*white-500*/;
+  //25%
+  --theme-secondary: #e8e8e8 /*white-600*/;
+  //15%
+  --theme-ternary: #d1d1d1 /*white-700*/;
+  //10%
+  --theme-accent: #37eeb1 /*emerald-300*/;
+  //?%
+  --theme-complementary: ;
+
+  //helper
+  --theme-error: #ef4444 /*red-500*/;
+  --theme-info: #64748b /*blue-grey-500*/;
+  --theme-succes: #37eeb1 /*emerald-300*/;
+  --theme-warning: #f59e0b /*amber-500*/;
+
+  //state
+  --theme-disabled: #737373 /*true-grey-500*/;
+  --theme-highlight: ;
+  --theme-visited: var(--theme-accent);
+  //state
+  --theme-hover: ;
+  --theme-pressed: ;
+  --theme-focus: ;
+
+  //headings
+  --headings-color: var(--base-dark);
+
+  //subheadings
+  --subheadings-color: var(--base-dark);
+
+  //content
+  --content-color: var(--base-dark);
+
+  //label,etc
+  --labels-color: var(--base-dark);
+
+  //links
+  --links-color: var(--theme-accent);
+
+  //icons
+  --icons-color: var(--base-dark);
+
+  //inputs
+  --inputs-color: var(--base-dark);
+
+  //buttons
+  --buttons-color: var(--base-dark);
+  --buttons-background: transparent;
+
+  //floating buttons
+  --fabs-color: var(--base-dark);
+  --fabs-background: transparent;
+}
