@@ -4,7 +4,7 @@
     <min-grid class="gap-12 grid-3">
       <min-column items="center" v-for="col in 3">
         <button
-          class="radius-128 size-128 font-lg bold p-0 bg-secondary border-quintary border-w-3 color-tertiary overflow-hidden"
+          class="radius-88 size-88 font-lg bold p-0 bg-secondary border-quintary border-w-3 color-tertiary overflow-hidden"
           noshrink
         ></button>
         <p class="text-center font-lg bold color-accent">264</p>

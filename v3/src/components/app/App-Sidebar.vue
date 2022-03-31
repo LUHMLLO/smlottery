@@ -9,7 +9,7 @@ const { useWindowSize: ws } = useWindowSize();
   <min-sidebar
     class="flex-row p-0 w-auto radius-tr-6 radius-br-6 depth-3-black-500 overflow-visible"
     noshrink
-    :class="ws <= 768 && 'p-absolute h-100 top left z-index-16'"
+    :class="[ws <= 768 && 'p-absolute h-100 top left', useSidebarStore().state && 'z-index-16']"
   >
     <min-column class="gap-48 px-12 py-24 w-auto h-100" noshrink scroll-y>
       <min-section content="center" items="center" class="gap-12">

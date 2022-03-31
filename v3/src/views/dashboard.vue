@@ -8,13 +8,13 @@
 
 <template>
   <!-------------------------------------------------------------------------------------------------------------->
-  <min-row content="center" items="center">
+  <min-grid class="grid-1 sm:grid-2 gap-12">
     <Welcome-Tile />
     <min-row content="end" items="center" class="gap-12">
       <Button-Cta>view reports</Button-Cta>
       <Button-Cta class="bg-accent border-accent color-light depth-3-mint-500">Manage Shop</Button-Cta>
     </min-row>
-  </min-row>
+  </min-grid>
   <!-------------------------------------------------------------------------------------------------------------->
   <min-column class="gap-24">
     <min-grid class="gap-24 grid-1 md:grid-2 lg:grid-4">
