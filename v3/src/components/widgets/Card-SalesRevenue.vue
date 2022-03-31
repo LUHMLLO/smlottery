@@ -1,5 +1,5 @@
 <template>
-  <min-row content="center" items="center" class="gap-24 p-24 bg-secondary radius-6 depth-3-black-500">
+  <min-grid content="center" items="center" class="grid-1 md:grid-2 gap-24 p-24 bg-secondary radius-6 depth-3-black-500">
     <min-column class="gap-24">
       <p class="capitalize font-regular medium color-tertiary w-100">Sales Revenue</p>
       <min-column class="gap-12">
@@ -17,5 +17,5 @@
     >
       50%
     </button>
-  </min-row>
+  </min-grid>
 </template>
