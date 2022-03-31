@@ -1,4 +1,6 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { useSidebarStore } from "@/store/sidebar";
+</script>
 
 <template>
   <min-body class="bg-primary">
@@ -12,5 +14,8 @@
       </min-main>
       <App-Footer />
     </min-app>
+    <min-overlays>
+      <hr class="cursor-pointer bg-black-500 opacity-50" fill @click="useSidebarStore().off()" v-if="useSidebarStore().state" />
+    </min-overlays>
   </min-body>
 </template>

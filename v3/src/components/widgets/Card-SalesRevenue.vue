@@ -12,7 +12,7 @@
     </min-column>
 
     <button
-      class="radius-128 size-200 font-lg bold p-0 bg-secondary border-quintary border-w-3 color-tertiary overflow-hidden"
+      class="m-auto radius-128 size-200 font-lg bold p-0 bg-secondary border-quintary border-w-3 color-tertiary overflow-hidden"
       noshrink
     >
       50%
