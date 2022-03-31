@@ -1,5 +1,5 @@
 <route lang="json">
 {
-  "redirect": "dashboard"
+  "name": "Create clients"
 }
 </route>

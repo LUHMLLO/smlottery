@@ -7,12 +7,15 @@ declare module 'vue' {
     AppFooter: typeof import('./../src/components/app/App-Footer.vue')['default']
     AppHeader: typeof import('./../src/components/app/App-Header.vue')['default']
     AppSidebar: typeof import('./../src/components/app/App-Sidebar.vue')['default']
-    Button: typeof import('./../src/components/widgets/Button.vue')['default']
+    AvatarIcon: typeof import('./../src/components/widgets/Avatar-Icon.vue')['default']
+    ButtonCta: typeof import('./../src/components/widgets/Button-Cta.vue')['default']
     ButtonIcon: typeof import('./../src/components/widgets/Button-Icon.vue')['default']
-    'ButtonIcon copy': typeof import('./../src/components/widgets/Button-Icon copy.vue')['default']
-    ButtonImage: typeof import('./../src/components/widgets/Button-Image.vue')['default']
     ButtonSidebar: typeof import('./../src/components/widgets/Button-Sidebar.vue')['default']
-    ButtonSlot: typeof import('./../src/components/widgets/Button-Slot.vue')['default']
+    CardRevenue: typeof import('./../src/components/widgets/Card-Revenue.vue')['default']
+    CardSales: typeof import('./../src/components/widgets/Card-Sales.vue')['default']
+    CardSalesRevenue: typeof import('./../src/components/widgets/Card-SalesRevenue.vue')['default']
+    CardStats: typeof import('./../src/components/widgets/Card-Stats.vue')['default']
+    WelcomeTile: typeof import('./../src/components/widgets/Welcome-Tile.vue')['default']
   }
 }
 

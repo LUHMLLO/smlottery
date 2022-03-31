@@ -9,9 +9,9 @@ const props = defineProps({
   <button
     content="center"
     items="center"
-    class="size-44 radius-5 border-none p-0 overflow-hidden"
+    class="size-32 radius-6 border-none p-0 overflow-hidden"
     :class="[props.active && 'bg-accent']"
   >
-    <i class="font-lg" :class="[props.icon, props.active && 'color-primary']"></i>
+    <i class="font-regular" :class="[props.icon, props.active && 'color-light']"></i>
   </button>
 </template>

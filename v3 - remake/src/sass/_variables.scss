@@ -2,18 +2,18 @@
 
 //theme colors
 :root {
-  //60%
-  --theme-primary: #f2f2f2 /*offwhite-600*/;
-  //15%
-  --theme-secondary: #fff /*white-500*/;
+  //50%
+  --theme-primary: #e1e1e1;
+  //20%
+  --theme-secondary: #ffffff;
   //10%
-  --theme-tertiary: #19191b /*grey-900*/;
+  --theme-tertiary: #1a1a1a;
+  //10%
+  --theme-quaternary: #71717a;
   //5%
-  --theme-quaternary: #71717a /*grey-500*/;
+  --theme-quinary: #e6e6e6;
   //5%
-  --theme-quinary: #d7d7da /*grey-50*/;
-  //5%
-  --theme-accent: #10b981 /*emerald-500*/;
+  --theme-accent: #3eb489 /*mint-500*/;
 
   //helper
   --theme-error: #ef4444 /*red-500*/;
@@ -38,9 +38,9 @@
   --base-padding: calc(24 * var(--base-rem));
   --base-margin: 0;
   --base-background: var(--theme-primary);
-  --base-hr-color: #d0d0d3 /*grey-100*/;
-  --base-light: #fff;
-  --base-dark: #000;
+  --base-hr-color: var(--theme-quinary);
+  --base-light: #ffffff;
+  --base-dark: #000000;
   --overlays-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -59,7 +59,8 @@
   --font-spacing: 0;
 
   //fonts
-  --font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  --font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    sans-serif;
 
   --font-serif: serif;
   --font-sans: "Montserrat", sans-serif;
@@ -105,7 +106,7 @@
   //content
   --content-size: calc(16 * var(--base-rem));
   --content-weight: var(--weight-thin);
-  --content-color: var(--theme-ternary);
+  --content-color: var(--theme-tertiary);
 
   //label,etc
   --labels-size: calc(14 * var(--base-rem));
@@ -131,8 +132,8 @@
   --inputs-padding: calc(12 * var(--base-rem)) calc(16 * var(--base-rem));
 
   //buttons
-  --buttons-size: calc(14 * var(--base-rem));
-  --buttons-weight: var(--weight-regular);
+  --buttons-size: calc(12 * var(--base-rem));
+  --buttons-weight: var(--weight-medium);
   --buttons-color: var(--content-color);
   --buttons-border: solid calc(1 * var(--base-rem));
   --buttons-background: transparent;

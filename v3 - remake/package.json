@@ -7,20 +7,20 @@
     "update": "npm install -g npm-check-updates && ncu -u && npm install"
   },
   "dependencies": {
-    "@vueuse/core": "^8.2.0",
-    "mindesignsystem": "^1.1.6-7",
+    "@vueuse/core": "^8.2.1",
+    "mindesignsystem": "^1.1.7-1",
     "pinia": "^2.0.12",
     "sass": "^1.49.9",
     "vue": "^3.2.31",
     "vue-router": "^4.0.14"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^2.2.4",
+    "@vitejs/plugin-vue": "^2.3.1",
     "@vue/compiler-sfc": "^3.2.31",
     "typescript": "^4.6.3",
-    "unplugin-auto-import": "^0.6.6",
+    "unplugin-auto-import": "^0.6.8",
     "unplugin-vue-components": "^0.18.5",
-    "vite": "^2.8.6",
+    "vite": "^2.9.0",
     "vite-plugin-pages": "^0.22.0",
     "vue-tsc": "^0.33.9"
   },
