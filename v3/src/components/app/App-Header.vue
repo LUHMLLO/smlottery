@@ -11,7 +11,7 @@ import { useSidebarStore } from "@/store/sidebar";
           <h4 class="font-regular sm:font-lg md:font-xl bold color-tertiary">Dashboard</h4>
         </min-row>
         <min-row content="end" items="center" class="gap-12">
-          <i class="uil-sunset font-xl color-yellow-500" />
+          <i class="uil-sunset font-xl color-tertiary" />
         </min-row>
       </min-grid>
     </min-container>
