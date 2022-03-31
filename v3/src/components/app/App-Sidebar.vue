@@ -14,7 +14,7 @@ const { useWindowSize: ws } = useWindowSize();
     <min-column class="gap-48 px-12 py-24 w-auto h-100" noshrink scroll-y>
       <min-section content="center" items="center" class="gap-12">
         <min-logo class="bg-none size-32">
-          <img src="favicon.png" alt="logo" class="h-100 w-100" fill />
+          <img src="~/logo.png" alt="logo" class="h-100 w-100" fill />
         </min-logo>
       </min-section>
       <min-section content="center" items="center" class="gap-12">
